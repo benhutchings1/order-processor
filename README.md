@@ -2,13 +2,13 @@
 Using microservice outbox + circuit breaker patterns to provide reliable and consistent order messaging in a distributed system 
 
 ## Simple pipeline
-![UML Sequence Diagram of simple data pipeline](assets\simple-pipeline.png)
+![UML Sequence Diagram of simple data pipeline](./assets/simple-pipeline.png)
 Here is a simple pipeline for storing an order in a database then sending to a message broker for processing. An issue with this pipeline is if the pipeline breaks between inserting into the database and sending to the message broker. If this happens then the order will be recorded in the system but the order will have never made it to the order processor. This leaves the database and message broker in an inconsistent state.
 
 
 ## Consistency Assurance
 Using the outbox, correlation identifier, & circuit breaker patterns, we can ensure consistency and reliability in the distributed system.
-![UML Sequence Diagram of resilient data pipeline](assets\resilient-pipeline.png)
+![UML Sequence Diagram of resilient data pipeline](./assets/resilient-pipeline.png)
 This sequence diagram shows the data flow in the pipeline.
 
 
