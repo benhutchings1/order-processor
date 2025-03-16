@@ -27,15 +27,27 @@ services:
         - setup
         - message-broker
         build: OrderProcessor
+        environment:
+            ConnectionStrings__db: "Server=db,1433;Database=order;User Id=sa;Password=SuperStrong1!;TrustServerCertificate=True;"
+            ASPNETCORE_URLS: "http://localhost:8080"
+        ports:
+        - 8080:8080
     
     order-producer:
         depends_on: 
         - setup
         - message-broker
         build: OrderProducer
+        environment:
+            ConnectionStrings__db: "Server=db,1433;Database=order;User Id=sa;Password=SuperStrong1!;TrustServerCertificate=True;"
+            ConnectionStrings__messagebroker: "amqp://user:password@localhost:5672/"
+            queueName: "orders"
     
     order-reciever:
         depends_on: 
         - setup
         - message-broker
         build: OrderReciever
+        environment:
+            ConnectionStrings__messagebroker: "amqp://user:password@localhost:5672/"
+            queueName: "orders"

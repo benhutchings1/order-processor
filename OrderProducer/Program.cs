@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore;
 
 var configuration = new ConfigurationBuilder()
            .SetBasePath(Directory.GetCurrentDirectory())
-           .AddJsonFile("appsettings.json")
+           .AddJsonFile("appsettings.json", optional: true)
            .AddEnvironmentVariables()
            .Build();
 
 var messageBroker = Broker.BrokerFactory(
-    configuration["queueName"] ?? throw new ArgumentNullException(),
-    configuration.GetConnectionString("messagebroker") ?? throw new ArgumentNullException()
+    configuration["queueName"] ?? throw new ArgumentNullException("message queue name"),
+    configuration.GetConnectionString("messagebroker") ?? throw new ArgumentNullException("message broker connection string")
 );
 
 var outboxDbOptions = new DbContextOptionsBuilder<OrderContext>()

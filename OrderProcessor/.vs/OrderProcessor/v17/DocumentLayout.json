@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04E09EDB-F2F2-4FFE-A986-E692119FA0E8}|OrderProcessor.csproj|c:\\users\\ben hutchings\\desktop\\c#\\order-processor\\orderprocessor\\orders\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E09EDB-F2F2-4FFE-A986-E692119FA0E8}|OrderProcessor.csproj|solutionrelative:orders\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04E09EDB-F2F2-4FFE-A986-E692119FA0E8}|OrderProcessor.csproj|c:\\users\\ben hutchings\\desktop\\c#\\order-processor\\orderprocessor\\orders\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E09EDB-F2F2-4FFE-A986-E692119FA0E8}|OrderProcessor.csproj|solutionrelative:orders\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04E09EDB-F2F2-4FFE-A986-E692119FA0E8}|OrderProcessor.csproj|c:\\users\\ben hutchings\\desktop\\c#\\order-processor\\orderprocessor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E09EDB-F2F2-4FFE-A986-E692119FA0E8}|OrderProcessor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04E09EDB-F2F2-4FFE-A986-E692119FA0E8}|OrderProcessor.csproj|c:\\users\\ben hutchings\\desktop\\c#\\order-processor\\orderprocessor\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E09EDB-F2F2-4FFE-A986-E692119FA0E8}|OrderProcessor.csproj|solutionrelative:repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04E09EDB-F2F2-4FFE-A986-E692119FA0E8}|OrderProcessor.csproj|c:\\users\\ben hutchings\\desktop\\c#\\order-processor\\orderprocessor\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E09EDB-F2F2-4FFE-A986-E692119FA0E8}|OrderProcessor.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04E09EDB-F2F2-4FFE-A986-E692119FA0E8}|OrderProcessor.csproj|c:\\users\\ben hutchings\\desktop\\c#\\order-processor\\orderprocessor\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{04E09EDB-F2F2-4FFE-A986-E692119FA0E8}|OrderProcessor.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\Orders\\OrderService.cs",
-              "RelativeDocumentMoniker": "Orders\\OrderService.cs",
-              "ToolTip": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\Orders\\OrderService.cs",
-              "RelativeToolTip": "Orders\\OrderService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T23:35:08.75Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repository.cs",
-              "ToolTip": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\Repository\\Repository.cs",
-              "RelativeToolTip": "Repository\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T23:21:23.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAswBAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T23:14:54.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\Orders\\OrderController.cs",
-              "RelativeDocumentMoniker": "Orders\\OrderController.cs",
-              "ToolTip": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\Orders\\OrderController.cs",
-              "RelativeToolTip": "Orders\\OrderController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T22:54:23.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T17:45:09.518Z",
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\Ben Hutchings\\Desktop\\C#\\order-processor\\OrderProcessor\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-16T15:32:32.934Z",
               "EditorCaption": ""
             }
           ]
