@@ -1,0 +1,41 @@
+services:
+    message-broker:
+        image: rabbitmq:4
+        ports:
+        - 5672:5672
+        environment:
+            RABBITMQ_DEFAULT_USER: user
+            RABBITMQ_DEFAULT_PASS: password
+    db:
+        image: mcr.microsoft.com/mssql/server
+        ports:
+        - 1433:1433 
+        environment:
+            ACCEPT_EULA: Y
+            MSSQL_SA_PASSWORD: SuperStrong1!
+    setup:
+        image: mcr.microsoft.com/mssql-tools
+        depends_on: 
+        - db
+        restart: on-failure:5 
+        command:
+        - "/bin/sh"
+        - "-c"
+        - "/opt/mssql-tools/bin/sqlcmd -U sa -P SuperStrong1! -S db -C -Q 'create database order'"
+    order-processor:
+        depends_on: 
+        - setup
+        - message-broker
+        build: OrderProcessor
+    
+    order-producer:
+        depends_on: 
+        - setup
+        - message-broker
+        build: OrderProducer
+    
+    order-reciever:
+        depends_on: 
+        - setup
+        - message-broker
+        build: OrderReciever
