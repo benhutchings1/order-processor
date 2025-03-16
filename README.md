@@ -1,5 +1,5 @@
 # Order Processor Pipeline
-Using microservice outbox + circuit breaker patterns to provide reliable and consistent order messaging in a distributed system 
+Using microservice outbox pattern to provide reliable and consistent order messaging in a distributed system 
 
 ## Simple pipeline
 ![UML Sequence Diagram of simple data pipeline](./assets/simple-pipeline.png)
@@ -7,7 +7,7 @@ Here is a simple pipeline for storing an order in a database then sending to a m
 
 
 ## Consistency Assurance
-Using the outbox, correlation identifier, & circuit breaker patterns, we can ensure consistency and reliability in the distributed system.
+Using the outbox & correlation identifier patterns, we can ensure consistency and reliability in the distributed system.
 ![UML Sequence Diagram of resilient data pipeline](./assets/resilient-pipeline.png)
 This sequence diagram shows the data flow in the pipeline.
 
@@ -26,16 +26,9 @@ This sequence diagram shows the data flow in the pipeline.
 
 **[4]** The outbox processor published the order to the message broker
 
-*Failure case:* If this case fails then it will be retriggered by the outbox processor as the it has not been removed from the outbox. Here, in the case of the message broker being overloaded, the circuit breaker pattern can improve reliability [see circuit breaker section].
+*Failure case:* If this case fails then it will be retriggered by the outbox processor as the it has not been removed from the outbox.
 
 
 **[5]** The outbox record is deleted from the outbox
 
 *Failure case:* If this fails then the outbox processor will retrigger sending of the order. This can result in the case where the message broker is spammed with orders, which are all processed and leaves the system in an inconsistent state. Here each order is given some form of correlation ID which can correlate orders which may have already been processed. This does leave the burden on the client.
-
-## Circuit Box Pattern
-
-The circuit box pattern is used when there is frequent errors due to recipient server being overloaded, giving the server a chance to recover. The circuit breaker can be in 3 states.
-1. Open - Messages are sent to server as normal
-2. Closed - Messages are buffered to let the server recover
-3. Half Open - A few messages are sent from the buffer to test if the server is ready to recieve messages. If successful then the state is moved to open
