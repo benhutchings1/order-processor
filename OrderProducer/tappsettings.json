@@ -1,0 +1,7 @@
+﻿{
+  "ConnectionStrings": {
+    "messagebroker": "amqp://user:password@localhost:5672/",
+    "db": "Server=localhost,1433;Database=order;User Id=sa;Password=SuperStrong1!;TrustServerCertificate=True;"
+  },
+  "queueName": "orders"
+}
